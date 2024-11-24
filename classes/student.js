@@ -1,11 +1,10 @@
-export class Student {
+import { Person } from "./person.js";
+
+export class Student extends Person {
   courses;
 
-  constructor(name, surname, birthYear) {
-    //implement id logic
-    this.name = name;
-    this.surname = surname;
-    this.birthYear = birthYear;
+  constructor(name, surname, birthYear){
+    super(name, surname, birthYear)
     this.courses = {};
   }
 
